@@ -2,13 +2,15 @@ defmodule Issues.Mixfile do
   use Mix.Project
 
   def project do
-    [ app:      :issues,
+    [ 
+      app:      :issues,
       version:  "0.0.1",
       name: "Issues",
       source_url: "git@github.com:bbtb1982/elixir_issues.git",
       elixir:   "~> 1.2",
       escript:  escript_config,
-      deps: deps ]
+      deps: deps
+    ]
   end
 
   # Configuration for the OTP application
@@ -23,7 +25,7 @@ defmodule Issues.Mixfile do
   defp deps do
     [
       { :httpoison, "~> 0.8.0" },
-      { :jsx,       "~> 2.8.0" }
+      { :jsx,       "~> 2.8.0" },
       { :ex_doc,    github: "elixir-lang/ex_doc" }
     ]
   end
